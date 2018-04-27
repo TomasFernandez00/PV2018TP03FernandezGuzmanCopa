@@ -5,6 +5,8 @@
  */
 package principal01;
 
+import modelo.ArregloDiezNumeros;
+
 /**
  *
  * @author Tomas Fernandez EdM
@@ -12,7 +14,9 @@ package principal01;
 public class Principal01 {
 
 	public static void main(String[] args) {
-		
+		ArregloDiezNumeros unArregloDiezNumeros = new ArregloDiezNumeros();
+		unArregloDiezNumeros.ingresarDiezNumeros();
+		unArregloDiezNumeros.procesarDiezNumeros();
 	}
 	
 }
