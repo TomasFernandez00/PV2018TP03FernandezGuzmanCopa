@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package principal03;
+package punto05;
 
 /**
  *
  * @author Elena
  */
-public class Principal03 {
+public class Principal5 {
     
 }

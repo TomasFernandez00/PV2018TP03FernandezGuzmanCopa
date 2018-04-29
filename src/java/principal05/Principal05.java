@@ -13,13 +13,14 @@ import modelo.RectanguloBean;
  * @author Agustin
  */
 public class Principal05 {
+
     public static void main(String[] args) {
-        Scanner ingreso=new Scanner(System.in);
-        RectanguloBean rectanguloBean=new RectanguloBean();
+        Scanner ingreso = new Scanner(System.in);
+        RectanguloBean rectanguloBean = new RectanguloBean();
         rectanguloBean.llenarListado();
         rectanguloBean.visualizarListado();
         System.out.println("Seleccione el Rectangulo a eliminar");
-        int i=ingreso.nextInt();
+        int i = ingreso.nextInt();
         rectanguloBean.eliminarRectanguloDeListado(i);
         rectanguloBean.visualizarListado();
     }
