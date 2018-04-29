@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Triangulo {
 
-    int lados[];
+    int[] lados;
 
     public Triangulo() {
     }
@@ -25,15 +25,15 @@ public class Triangulo {
             System.out.println(lados[1] + lados[2] + lados[3]);
         } else {
             System.out.println("Ingrese lados validos para formar triangulo");
-            ingreso();
+            calcPer();
         }
 
     }
 
     public Boolean verificarTriang() {
-        if (lados[1] + lados[2] > lados[3]) {
-            if (lados[1] + lados[3] > lados[2]) {
-                if (lados[3] + lados[2] > lados[1]) {
+        if (lados[0] + lados[1] > lados[2]) {
+            if (lados[0] + lados[2] > lados[1]) {
+                if (lados[2] + lados[1] > lados[0]) {
                     return true;
                 }
                 return false;
@@ -47,7 +47,7 @@ public class Triangulo {
         lados = new int[2];
         Scanner ingreso = new Scanner(System.in);
         for (int i = 0; i <= lados.length; i++) {
-            System.out.println("Ingrese lado " + i);
+            System.out.println("Ingrese lado ");
             lados[i] = ingreso.nextInt();
         }
     }
