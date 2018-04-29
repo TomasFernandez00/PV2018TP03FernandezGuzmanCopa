@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Triangulo {
 
-    int[] lados;
+    private int[] lados;
 
     public Triangulo() {
     }
@@ -22,7 +22,7 @@ public class Triangulo {
         ingreso();
         Boolean a = verificarTriang();
         if (a == true) {
-            System.out.println(lados[1] + lados[2] + lados[3]);
+            System.out.println(getLados()[0] + getLados()[1] + getLados()[2]);
         } else {
             System.out.println("Ingrese lados validos para formar triangulo");
             calcPer();
@@ -31,9 +31,9 @@ public class Triangulo {
     }
 
     public Boolean verificarTriang() {
-        if (lados[0] + lados[1] > lados[2]) {
-            if (lados[0] + lados[2] > lados[1]) {
-                if (lados[2] + lados[1] > lados[0]) {
+        if (getLados()[0] + getLados()[1] > getLados()[2]) {
+            if (getLados()[0] + getLados()[2] > getLados()[1]) {
+                if (getLados()[2] + getLados()[1] > getLados()[0]) {
                     return true;
                 }
                 return false;
@@ -44,11 +44,25 @@ public class Triangulo {
     }
 
     public void ingreso() {
-        lados = new int[2];
+        setLados(new int[3]);
         Scanner ingreso = new Scanner(System.in);
-        for (int i = 0; i <= lados.length; i++) {
+        for (int i = 0; i < getLados().length; i++) {
             System.out.println("Ingrese lado ");
-            lados[i] = ingreso.nextInt();
+            getLados()[i] = ingreso.nextInt();
         }
+    }
+
+    /**
+     * @return the lados
+     */
+    public int[] getLados() {
+        return lados;
+    }
+
+    /**
+     * @param lados the lados to set
+     */
+    public void setLados(int[] lados) {
+        this.lados = lados;
     }
 }
