@@ -5,8 +5,8 @@
  */
 package principal04;
 
-import java.util.ArrayList;
-import modelo.Rectangulo;
+import java.util.Scanner;
+import modelo.RectanguloBean;
 
 /**
  *
@@ -14,9 +14,13 @@ import modelo.Rectangulo;
  */
 public class Principal04 {
     public static void main(String[] args) {
-        
-    }
-    public static void resolver4(){
-    ArrayList rectangulos;
+        Scanner ingreso = new Scanner(System.in);
+        RectanguloBean rectanguloBean = new RectanguloBean();
+        rectanguloBean.llenarListado();
+        rectanguloBean.visualizarListado();
+        System.out.println("Seleccione el Rectangulo a eliminar");
+        int i = ingreso.nextInt();
+        rectanguloBean.eliminarRectanguloDeListado(i);
+        rectanguloBean.visualizarListado();
     }
 }

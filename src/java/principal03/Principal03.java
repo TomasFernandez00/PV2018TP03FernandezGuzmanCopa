@@ -5,10 +5,18 @@
  */
 package principal03;
 
+import modelo.Triangulo;
+
 /**
  *
- * @author Elena
+ * @author Agustin
  */
 public class Principal03 {
-    
+    public static void main(String[] args) {
+        resPunto3();
+    }
+    public static void resPunto3(){
+        Triangulo unTriangulo=new Triangulo();
+        unTriangulo.calcPer();
+    }
 }
