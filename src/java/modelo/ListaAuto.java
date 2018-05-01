@@ -9,31 +9,32 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Elena
+ * @author Agustin
  */
-public class ListaAutos {
-    private ArrayList <Auto> listadoAutos;
+public class ListaAuto {
+    private ArrayList<Autos> listadoAutos;
+
+    public ListaAuto() {
+        listadoAutos=new ArrayList();
+    }
+
+    public ListaAuto(ArrayList<Autos> listadoAutos) {
+        this.listadoAutos = listadoAutos;
+    }
 
     /**
      * @return the listadoAutos
      */
-    public ArrayList <Auto> getListadoAutos() {
+    public ArrayList<Autos> getListadoAutos() {
         return listadoAutos;
     }
 
     /**
      * @param listadoAutos the listadoAutos to set
      */
-    public void setListadoAutos(ArrayList <Auto> listadoAutos) {
+    public void setListadoAutos(ArrayList<Autos> listadoAutos) {
         this.listadoAutos = listadoAutos;
     }
-
-    public ListaAutos() {
-        listadoAutos = new ArrayList();
-    }
-
-    public ListaAutos(ArrayList<Auto> listadoAutos) {
-        this.listadoAutos = listadoAutos;
-    }
+    
     
 }
