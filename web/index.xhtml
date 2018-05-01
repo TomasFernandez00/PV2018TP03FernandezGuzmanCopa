@@ -19,7 +19,7 @@
                     <p:outputLabel id="lblIsbn" value="Ingrese isbn de libro"/>
                     <p:inputText id="txtIsbn" value="#{newJSFManagedBean.isbn}"/>
                     <p:outputLabel/>
-                    <p:commandButton id="btnLibro" value="Agregar Libro" actionListener="#{newJSFManagedBean.crearLibro()}"/>
+                    <p:commandButton id="btnLibro" value="Agregar Libro" actionListener="#{newJSFManagedBean.crearLibro()}" update="dtTblMuestraLibros"/>
 
                 </h:panelGrid>
                 <h:panelGrid id="TblMuestraLibros" columns="4">
